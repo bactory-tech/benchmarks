@@ -1,0 +1,171 @@
+{
+  "baseSeed": 427001,
+  "defaultPaths": 500000,
+  "scenarios": [
+    {
+      "id": "baseline",
+      "description": "ATM baseline with elevated volatility",
+      "market": {
+        "spot": 100,
+        "volatility": 0.6,
+        "riskFreeRate": 0.04,
+        "dividendYield": 0
+      },
+      "option": {
+        "strike": 100,
+        "timeToExpiry": 1,
+        "observations": 30
+      }
+    },
+    {
+      "id": "low-volatility",
+      "description": "ATM contract with low volatility",
+      "market": {
+        "spot": 100,
+        "volatility": 0.15,
+        "riskFreeRate": 0.04,
+        "dividendYield": 0
+      },
+      "option": {
+        "strike": 100,
+        "timeToExpiry": 1,
+        "observations": 30
+      }
+    },
+    {
+      "id": "high-volatility",
+      "description": "ATM contract with high volatility",
+      "market": {
+        "spot": 100,
+        "volatility": 1,
+        "riskFreeRate": 0.04,
+        "dividendYield": 0
+      },
+      "option": {
+        "strike": 100,
+        "timeToExpiry": 1,
+        "observations": 30
+      }
+    },
+    {
+      "id": "in-the-money",
+      "description": "In-the-money arithmetic Asian call",
+      "market": {
+        "spot": 120,
+        "volatility": 0.6,
+        "riskFreeRate": 0.04,
+        "dividendYield": 0
+      },
+      "option": {
+        "strike": 100,
+        "timeToExpiry": 1,
+        "observations": 30
+      }
+    },
+    {
+      "id": "out-of-the-money",
+      "description": "Out-of-the-money arithmetic Asian call",
+      "market": {
+        "spot": 80,
+        "volatility": 0.6,
+        "riskFreeRate": 0.04,
+        "dividendYield": 0
+      },
+      "option": {
+        "strike": 100,
+        "timeToExpiry": 1,
+        "observations": 30
+      }
+    },
+    {
+      "id": "short-maturity",
+      "description": "Three-month maturity",
+      "market": {
+        "spot": 100,
+        "volatility": 0.6,
+        "riskFreeRate": 0.04,
+        "dividendYield": 0
+      },
+      "option": {
+        "strike": 100,
+        "timeToExpiry": 0.25,
+        "observations": 30
+      }
+    },
+    {
+      "id": "long-maturity",
+      "description": "Two-year maturity",
+      "market": {
+        "spot": 100,
+        "volatility": 0.6,
+        "riskFreeRate": 0.04,
+        "dividendYield": 0
+      },
+      "option": {
+        "strike": 100,
+        "timeToExpiry": 2,
+        "observations": 60
+      }
+    },
+    {
+      "id": "positive-dividend-yield",
+      "description": "Positive continuous dividend yield",
+      "market": {
+        "spot": 100,
+        "volatility": 0.6,
+        "riskFreeRate": 0.04,
+        "dividendYield": 0.02
+      },
+      "option": {
+        "strike": 100,
+        "timeToExpiry": 1,
+        "observations": 30
+      }
+    },
+    {
+      "id": "negative-rate",
+      "description": "Negative risk-free rate",
+      "market": {
+        "spot": 100,
+        "volatility": 0.6,
+        "riskFreeRate": -0.01,
+        "dividendYield": 0
+      },
+      "option": {
+        "strike": 100,
+        "timeToExpiry": 1,
+        "observations": 30
+      }
+    },
+    {
+      "id": "single-observation",
+      "description": "Single observation reducing to a European call payoff",
+      "market": {
+        "spot": 100,
+        "volatility": 0.6,
+        "riskFreeRate": 0.04,
+        "dividendYield": 0
+      },
+      "option": {
+        "strike": 100,
+        "timeToExpiry": 1,
+        "observations": 1
+      }
+    },
+    {
+      "id": "zero-volatility",
+      "description": "Deterministic GBM path",
+      "market": {
+        "spot": 100,
+        "volatility": 0,
+        "riskFreeRate": 0.04,
+        "dividendYield": 0
+      },
+      "option": {
+        "strike": 100,
+        "timeToExpiry": 1,
+        "observations": 30
+      }
+    }
+  ]
+}
