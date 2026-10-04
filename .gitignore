@@ -1,5 +1,13 @@
-# Object file
-*.o
+node_modules/
+dist/
+coverage/
 
-# Ada Library Information
-*.ali
+.DS_Store
+
+*.log
+npm-debug.log*
+
+.env
+.env.*
+
+!.env.example
