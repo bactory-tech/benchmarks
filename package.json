@@ -1,0 +1,20 @@
+{
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reproducible experiments for deterministic onchain pricing.",
+  "license": "MIT",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "benchmark:asian": "tsx asian/benchmark.ts",
+    "benchmark": "npm run benchmark:asian",
+    "check": "npm run typecheck && npm run benchmark"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
